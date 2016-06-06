@@ -1,0 +1,11 @@
+use
+orderDB
+select
+1
+0 null * 
+1
+book
+where
+1
+4 null authors 6 2 %David%
+5

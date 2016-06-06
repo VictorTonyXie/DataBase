@@ -1,0 +1,34 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{\numberline {1}项目任务}{1}{chapter.2}
+\contentsline {chapter}{\numberline {2}系统结构设计}{2}{chapter.14}
+\contentsline {chapter}{\numberline {3}模块设计}{4}{chapter.17}
+\contentsline {section}{\numberline {3.1}记录管理模块}{4}{section.18}
+\contentsline {section}{\numberline {3.2}系统管理模块}{6}{section.24}
+\contentsline {section}{\numberline {3.3}查询解析模块}{7}{section.28}
+\contentsline {section}{\numberline {3.4}语句解析模块}{9}{section.33}
+\contentsline {section}{\numberline {3.5}索引模块}{10}{section.35}
+\contentsline {section}{\numberline {3.6}扩展功能}{13}{section.42}
+\contentsline {subsection}{\numberline {3.6.1}扩展数据类型}{13}{subsection.43}
+\contentsline {subsection}{\numberline {3.6.2}域完整性约束}{13}{subsection.44}
+\contentsline {subsection}{\numberline {3.6.3}外键约束}{13}{subsection.45}
+\contentsline {subsection}{\numberline {3.6.4}模糊匹配}{13}{subsection.46}
+\contentsline {subsection}{\numberline {3.6.5}复合查询条件}{14}{subsection.48}
+\contentsline {subsection}{\numberline {3.6.6}三个表以上的连接}{14}{subsection.49}
+\contentsline {subsection}{\numberline {3.6.7}聚集查询}{14}{subsection.50}
+\contentsline {subsection}{\numberline {3.6.8}图形用户界面}{14}{subsection.51}
+\contentsline {chapter}{\numberline {4}实验成果}{15}{chapter.52}
+\contentsline {section}{\numberline {4.1}基础功能}{15}{section.53}
+\contentsline {subsection}{\numberline {4.1.1}查询}{15}{subsection.54}
+\contentsline {subsection}{\numberline {4.1.2}插入}{17}{subsection.59}
+\contentsline {subsection}{\numberline {4.1.3}删除}{18}{subsection.61}
+\contentsline {subsection}{\numberline {4.1.4}更新}{18}{subsection.63}
+\contentsline {section}{\numberline {4.2}扩展功能}{19}{section.65}
+\contentsline {subsection}{\numberline {4.2.1}域完整性约束}{19}{subsection.66}
+\contentsline {subsection}{\numberline {4.2.2}外键约束}{19}{subsection.68}
+\contentsline {subsection}{\numberline {4.2.3}多表连接}{20}{subsection.70}
+\contentsline {subsection}{\numberline {4.2.4}模糊匹配}{20}{subsection.72}
+\contentsline {subsection}{\numberline {4.2.5}聚集查询}{21}{subsection.74}
+\contentsline {chapter}{\numberline {5}小组分工}{22}{chapter.76}
+\contentsline {chapter}{\numberline {6}实验总结}{23}{chapter.77}

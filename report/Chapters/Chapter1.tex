@@ -1,0 +1,39 @@
+% Chapter 1
+
+\chapter{项目任务} % Main chapter title
+
+\label{Chapter1} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+本项目是清华大学计算机科学与技术系开设的《数据库系统概论》课程项目。
+
+项目的任务是实现一个单用户的关系数据库管理系统。该项目分为四个功能模块：
+\begin{enumerate}[(1)]
+\item 记录管理模块：该模块是DBMS的文件系统，管理存储数据库记录以及元数据的文件。该模块依赖于我们预先给定的一个页式文件I/O系统，在此基础上扩展而成。
+\item 索引模块：为存储在文件中的记录建立B+树索引，加快查找速度。
+\item 系统管理模块：实现基本的数据定义语言（DDL），实现解析器来解析命令行。
+\item 查询解析模块：解析SQL语句，能将输入的SQL语句解析成关系代数表达式，并生成查询执行计划，访问文件系统执行查询，输出查询结果。
+\end{enumerate}
+
+在上述功能的基础上， 还可以对该系统进行个性化的功能扩展及性能优化，内容包括但不限于：
+\begin{enumerate}[(1)] 
+\item 查询优化：基于对查询计划代价的估计，为给定查询选择最有效的查询执行计划。
+\item 支持属性域约束和外键约束。
+\item 创建数据表时支持更多的数据类型。例如decimal, date等。
+\item 支持三个或以上表的连接。
+\item 支持更多SQL语句。例如聚集查询AVG,SUM,MIN,MAX,GROUP BY等。
+\item 支持模糊查询。例如LIKE关键字以及“$\%$, *, ?”等通配符。
+\item 提供类似MySQL front的图形化UI。
+\end{enumerate}
+
+
+%----------------------------------------------------------------------------------------
+

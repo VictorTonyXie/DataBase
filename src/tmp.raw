@@ -1,0 +1,5 @@
+USE orderDB;
+INSERT INTO customer VALUES (300001, 'CHAD DA CABELLO', 'F');
+INSERT INTO orders VALUES (315000,200001,'eight');
+DELETE FROM publisher WHERE state='CA';
+UPDATE book SET title='Nine Times Nine' WHERE authors='Anthony Boucher';

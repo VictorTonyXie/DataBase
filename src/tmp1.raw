@@ -1,0 +1,92 @@
+CREATE DATABASE qby;
+DROP DATABASE qby;
+CREATE DATABASE qby;
+DROP DATABASE qby;
+CREATE DATABASE qby;
+USE qby;
+CREATE TABLE book(id int(10),name varchar(50),author varchar(200), day int(5),month int(5),year int(5), 
+CHECK (id in (200001,200002,200003,200004,200005,200006,200007,200008,200009,200010,200011,200012,200013,200014,200015,200016,200017,200018,200019,200020)), PRIMARY KEY(id));
+SHOW TABLES;
+SHOW book;
+CREATE INDEX book(name);
+INSERT INTO book VALUES 
+ (200001,'Marias Diary (Plus S.)','Mark P. O. Morford',100082,5991,2530),
+ (200002,'Standing in the Shadows','Richard Bruce Wright',101787,2900,1860),
+ (200003,'Children of the Thunder','Carlo DEste',102928,3447,2154),
+ (200004,'The Great Gilly Hopkins','Gina Bari Kolata',101339,39,2809),
+ (200005,'Meine Juden--eure Juden','E. J. W. Barber',103089,206,2771),
+ (200006,'You Can Draw a Kangaroo','Amy Tan',101850,5296,2092),
+ (200007,'The Little Drummer Girl','Robert Cowley',104382,1006,2764),
+ (200008,'A Walk Through the Fire','Scott Turow',102008,8795,2543),
+ (200009,'The Nursing Home Murder','David Cordingly',102866,7380,2019),
+ (200010,'The Blanket of the Dark','Ann Beattie',103933,5242,1483),
+ (200011,'Not Without My Daughter','David Adams Richards',101177,567,1851),
+ (200012,'Introducing Halle Berry','Adam Lebor',104762,3505,1040),
+ (200013,'Men Who Love Too Little','Sheila Heti',103084,6131,2770),
+ (200014,'Once In a House On Fire','R. J. Kaiser',104024,4472,2876),
+ (200015,'Skindeep (Pan Horizons)','Jack Canfield',100670,4898,2729),
+ (200016,'A Voice Through a Cloud','Loren D. Estleman',101508,8322,1171),
+ (200017,'Master Georgie: A Novel','Robert Hendrickson',102615,1448,2716),
+ (200018,'Verdun (Lost Treasures)','Julia Oliver',102598,7459,1430),
+ (200019,'Der Pferdefl??sterer.','John Grisham',103834,6335,2303),
+ (200020,'Snowboarding to Nirvana','Toni Morrison',101085,8670,1524),
+ (200021,'Boys and Girls Together','The Onion',102228,3546,1375),
+ (200022,'Another Century of War?','Celia Brooks Brown',101834,2502,2468),
+ (200023,'A Book of Weather Clues','J. R. Parrish',100372,6066,2053),
+ (200024,'The Klutz Strikes Again','Mary-Kate &amp; Ashley Olsen',100733,8831,2687),
+ (200025,'Commitments (Arabesque)','Robynn Clairday',100289,2509,1827),
+ (200026,'The Third Twin: A Novel','Kathleen Duey',102335,4515,1624),
+ (200027,'The Dog Who Wouldnt Be','Rich Shapero',102789,6722,2581),
+ (200028,'Destined for the Throne','Michael Crichton',102197,6842,2269),
+ (200029,'Year of the Roasted Ear','C.S. Lewis',100428,8147,2981),
+ (200030,'The Horned Man: A Novel','ARTHUR PHILLIPS',104445,97,1774),
+ (200031,'Ensayo Sobre LA Ceguera','Stephan Jaramillo',100528,8844,2441),
+ (200032,'Flying High (Arabesque)','Mordecai Richler',103321,3338,1844),
+ (200033,'Du entkommst mir nicht.','Eleanor Cooney',102133,3913,1433),
+ (200034,'Keeping Faith : A Novel','Charlotte Link',100765,1018,2554),
+ (200035,'The Gift for All People','Richard North Patterson',104940,4918,1573),
+ (200036,'Deer &amp; deer hunting','Mark Salzman',104582,3657,2549),
+ (200037,'Trust in Me (Arabesque)','Harper Lee',102886,8015,2077),
+ (200038,'Gotham Diaries: A Novel','LAURA HILLENBRAND',102273,8397,1449),
+ (200039,'The Book of the Unicorn','Barbara Kingsolver',101182,5168,1706),
+ (200040,'The Multicultiboho Show','Jo Dereske',100901,7885,1141);
+CREATE INDEX book(id);
+SELECT id,name FROM book WHERE id<=200017;
+SELECT id, name FROM book WHERE id=200955;
+SELECT id,name FROM book WHERE name='Children of the Thunder';
+DELETE FROM book WHERE year=2154;
+SELECT id,name FROM book WHERE name='Children of the Thunder';
+SELECT id,name FROM book WHERE name>='Children of the Thunder';
+SELECT id,name FROM book WHERE author='Richard Bruce Wright';
+UPDATE book SET name='Nine Times Nine' WHERE author='Richard Bruce Wright';
+SELECT id,name FROM book WHERE author='Richard Bruce Wright';
+CREATE TABLE order(id int(10),name varchar(50), price float(10), book_id int(10));
+INSERT INTO order VALUES 
+ (1,'Marias Diary',0.1,200001),
+ (2,'AAAAAAAAAAAA',0.2,200002),
+ (3,'BAAAAAAAAAAA',0.3,200003),
+ (4,'CAAAAAAAAAAA',0.4,200004),
+ (5,'DAAAAAAAAAA',0.5,200005),
+ (6,'EAAAAAAAAAAA',0.6,200006),
+ (7,'FAAAAAAAAAAA',0.7,200007),
+ (8,'GAAAAAAAAAAA',0.8,200008),
+ (9,'HAAAAAAAAAA',0.9,200009),
+ (10,'IAAAAAAAAAAA',0.10,200010),
+ (11,'JAAAAAAAAAAA',0.11,200011),
+ (12,'KAAAAAAAAAAA',0.12,200012),
+ (13,'LAAAAAAAAAAA',0.13,200013),
+ (14,'MAAAAAAAAAAA',0.14,200014),
+ (15,'NAAAAAAAAAAA',0.15,200015),
+ (16,'OAAAAAAAAAAA',0.16,200016),
+ (17,'PAAAAAAAAAAA',0.17,200017),
+ (18,'QAAAAAAAAAAA',0.18,200018),
+ (19,'RAAAAAAAAAAA',0.9,200019),
+ (20,'SAAAAAAAAAAA',0.1+0.1,200020);
+UPDATE order SET book_id=829478 WHERE name='Marias Diary';
+SELECT id, name, book_id FROM order WHERE name>'B';
+SELECT id, name FROM book WHERE id=200955;
+UPDATE order SET book_id=200010 WHERE name='Marias Diary';
+SELECT id, name, book_id FROM order WHERE name>'B';
+SELECT * FROM book WHERE author like '%David%';
+SELECT * FROM book WHERE id = 200001 OR (id > 200003 AND id < 200007) OR (author='Julia Oliver');
+SELECT AVG(year) FROM book WHERE id < 200003;

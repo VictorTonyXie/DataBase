@@ -1,0 +1,7 @@
+USE orderDB
+11
+SELECT * FROM book WHERE authors like '%David%'
+7
+cmd select
+*
+('Table name ', 'book')
